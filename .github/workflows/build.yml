@@ -10,7 +10,7 @@ jobs:
         with:
           armbian_token: ${{ secrets.GITHUB_TOKEN }}
           armbian_board: "rk3318-box" # device to build for, as present in config/boards
-          armbian_release: "noble" # trixie
+          armbian_release: "trixie" # noble (ubuntu), trixie (debian)
           armbian_target: "build"
           armbian_ui: "minimal" # server xfce
           armbian_runner_clean: "yes" # recommended for Github runners
